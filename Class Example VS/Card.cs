@@ -18,17 +18,7 @@ namespace Class_Example_VS
 		/// Gets or sets an integer valuefor the card. Different card games
 		/// would assign different values.
 		/// </summary>
-		public int Value
-		{
-			get
-			{
-				return val;
-			}
-			set
-			{
-				val = value;
-			}
-		}
+
 
 		/// <summary>
 		/// Creates a Card object with the given card rank and suit
@@ -37,14 +27,18 @@ namespace Class_Example_VS
 		/// <param name="suit">Use ASCII char for club, spade, heart or diamond</param>
 		public Card(string rank, string suit, int value)
 		{
-			this.rank = rank;
-			this.suit = suit;
-			this.val = value;
+			this.Rank = rank;
+			this.Suit = suit;
+			this.Val = value;
 		}
+
+		public string Rank { get => rank; set => rank = value; }
+		public string Suit { get => suit; set => suit = value; }
+		public int Val { get => val; set => val = value; }
 
 		public override string ToString()
 		{
-			return rank + " " + suit;
+			return Rank + " " + Suit;
 		}
 	}
 }

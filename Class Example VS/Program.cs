@@ -16,6 +16,7 @@ namespace Class_Example_VS
 			Card myCard = new Card("Q", "♠", 14);
 			Console.WriteLine(myCard.Value);
 			myCard.Value = 10;
+			Console.WriteLine(myCard.Value);
 			Console.ReadLine();
 			
 		}
