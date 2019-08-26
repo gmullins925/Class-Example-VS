@@ -40,5 +40,10 @@ namespace Class_Example_VS
 		{
 			return Rank + " " + Suit;
 		}
+
+		public static implicit operator Card(DeckOfCards v)
+		{
+			throw new NotImplementedException();
+		}
 	}
 }

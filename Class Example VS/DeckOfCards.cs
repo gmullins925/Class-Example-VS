@@ -28,7 +28,7 @@ namespace Class_Example_VS
 			}
 		}
 
-	/*	public void Shuffle()
+		public void Shuffle()
 		{
 			Random randNum = new Random();
 			int nRand;
@@ -42,7 +42,12 @@ namespace Class_Example_VS
 				Deck[n] = Deck[nRand];
 				Deck[nRand] = temp;
 			}
-		}*/
+		}
+
+		public static implicit operator DeckOfCards(Card v)
+		{
+			throw new NotImplementedException();
+		}
 	}
 }
 
