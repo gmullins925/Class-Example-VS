@@ -29,12 +29,12 @@ namespace Class_Example_VS
 		{
 			this.Rank = rank;
 			this.Suit = suit;
-			this.Val = value;
+			this.val = value;
 		}
 
 		public string Rank { get => rank; set => rank = value; }
 		public string Suit { get => suit; set => suit = value; }
-		public int Val { get => val; set => val = value; }
+		public int Value { get => val; set => val = value; }
 
 		public override string ToString()
 		{
